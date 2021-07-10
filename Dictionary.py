@@ -17,4 +17,8 @@ word = input('Enter the word you want to search: ')
 
 output = translate(word)
 
-print(output)
+if type(output) == list:
+    for item in output:
+        print("- " + item)
+else:
+    print(output)
